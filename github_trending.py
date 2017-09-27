@@ -34,4 +34,3 @@ if __name__ == '__main__':
     top_repos_data = get_data_from_github()
     top_list = get_trending_repositories(top_repos_data, top_list_count)
     pprint_top_list(top_list)
-    pass
