@@ -8,14 +8,14 @@ def get_data_from_github():
                'language': 'python',
                'sort': 'stars',
                }
-    URL = 'https://api.github.com/search/repositories'
-    top_repos = requests.get(URL,params=payload).json()['items']
+    url = 'https://api.github.com/search/repositories'
+    top_repos = requests.get(url,params=payload).json()['items']
     return top_repos
 
 
 def get_trending_repositories(top_repos_data, top_list_count):
     top_list = []
-    for top_number in range(0,top_list_count+1):
+    for top_number in range(top_list_count+1):
         repository_name = top_repos_data[top_number]['name']
         repository_url = top_repos_data[top_number]['html_url']
         repository_issues = top_repos_data[top_number]['open_issues']
