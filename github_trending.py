@@ -4,7 +4,7 @@ from datetime import date, timedelta
 
 def get_data_from_github():
     week_ago = str(date.today() - timedelta(weeks=1))
-    payload = {'q' :['created:>{}'.format(week_ago)],
+    payload = {'q': 'created:>{}'.format(week_ago),
                'language': 'python',
                'sort': 'stars',
                }
