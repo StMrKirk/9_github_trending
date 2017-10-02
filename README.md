@@ -13,6 +13,9 @@ Example of running in Windows 10 PS:
 
 ```bash
 PS: python github_trending.py
+Name : ... URL: ... Open Issues: ...
+Name : ... URL: ... Open Issues: ...
+...
 ```
 
 # Project Goals
